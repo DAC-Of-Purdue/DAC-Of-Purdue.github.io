@@ -1,1 +1,11 @@
-
+.button {
+    font-family: courier new;
+    font-size: 14px;
+    color: #4e4e4e;
+    background-color: #f7f7f7;
+    padding: 4px 7px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-shadow: 0 1px 0 rgb(0 0 0 / 20%), 0 0 0 1px #fafafa inset, 0 0 0 1px #fff inset;
+    margin: 0 1px;
+}
