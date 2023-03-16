@@ -1,137 +1,61 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    
-  <link rel="stylesheet" href="styles.css">
+---
+layout: base
+---
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans&family=IBM+Plex+Sans:wght@300;400;600&family=Noto+Sans+Mono:wght@400;600&display=swap" rel="stylesheet">
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
 
-  <!-- Page title -->
+  {{ content }}
 
-  <title>Digital Agriculture Club of Purdue</title>
 
-  <!-- Navigation bar -->
+  {% if site.paginate %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <img src="/Users/megan/Documents/DAC Github Pages/img/dac.png" style="width:40px; margin:0px 20px;">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/pages/about-dac.html">About DAC</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/pages/projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/pages/projects/arduino-project.html">Arduino Pods</a></li>
-              <li><a class="dropdown-item" href="/pages/projects/digital-ag-crash-course-project.html">Digital Ag Crash Course</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pages/contact.html">Contact us</a>
-          </li>
+  {%- if posts.size > 0 -%}
+    {%- if page.list_title -%}
+      <h2 class="post-list-heading">{{ page.list_title }}</h2>
+    {%- endif -%}
+    <ul class="post-list">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- for post in posts -%}
+      <li>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    {% if site.paginate %}
+      <div class="pager">
+        <ul class="pagination">
+        {%- if paginator.previous_page %}
+          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
+        {%- else %}
+          <li><div class="pager-edge">•</div></li>
+        {%- endif %}
+          <li><div class="current-page">{{ paginator.page }}</div></li>
+        {%- if paginator.next_page %}
+          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
+        {%- else %}
+          <li><div class="pager-edge">•</div></li>
+        {%- endif %}
         </ul>
       </div>
-    </div>
-    </nav>
-  
-</head>
-  
-<body>
+    {%- endif %}
 
-  <div id="container" style="margin: auto; width: 75%;"> <!-- Start container -->
-    
-    <div class="row"> <!-- Start welcome block -->
-      <div class="two-column-55">
-        <h1 style="margin: 60px 0px 20px 0px;">Digital Agriculture Club of Purdue</h1>
-        <p> We are a club focused on the role of digital technologies in food and agriculture systems.<BR>
-            Join us if you'd like to chat about tech topics (open source, generative AI, trust & privacy), 
-            learn new skills (programming, modeling, how to use IoT),
-            network with peers + professionals in this space, and have fun!<BR>
-            Anyone of any major or discipline welcome! Grads and undergrads!
-        </p>
-        <p>
-            We meet on <b>Thursdays in ABE 3110 5.30-6.30pm</b>.<BR>
-            Join our slack to stay up to date!
-        </p>
-      </div>
-      <div class="two-column-45">
-          <img src="/Users/megan/Documents/DAC Github Pages/img/1.jpg" class="card-img-top" style="margin-top:60px;" alt="Daryl the Sheep - DAC Logo">
-      </div>
-    </div> <!-- Close welcome block -->
+  {%- endif -%}
 
-
-    <div id="projects"> <!-- Start projects block -->
-      <h2 style="text-align: center; margin: 60px 0px 20px 0px;">Our Projects</h2>
-      
-      <div class="row">
-
-        <!-- First project card -->
-        <div class="three-column">
-          <div class="card">
-            <div class="card-body">
-              <img src="/Users/megan/Documents/DAC Github Pages/img/test_img.jpeg" class="card-img-top" alt="...">
-              <h5 class="card-title">Arduino Pods</h5> 
-              <span class="badge rounded-pill" style="background-color: #000000; margin-left: 10px;">2022</span>
-              <span class="badge rounded-pill" style="background-color: #70e000;">Complete</span>
-              <p class="card-text">An experiment in growing plants in a controlled  environment! An experiment in growing plants in a controlled  environment!An experiment in growing plants in a controlled  environment!An experiment in growing plants in a controlled  environment!An experiment in growing plants in a controlled  environment!</p>
-            </div>
-            <a href="/pages/projects/arduino-project.html" class="btn btn-primary">Read more</a>
-          </div> 
-        </div>
-
-        <!-- Second project card -->
-        <div class="three-column">
-          <div class="card">
-            <div class="card-body">
-              <img src="/Users/megan/Documents/DAC Github Pages/img/test_img.jpeg" class="card-img-top" alt="...">
-              <h5 class="card-title">Digital Ag Crash Course</h5>
-              <span class="badge rounded-pill" style="background-color: #000000; margin-left: 10px;">2023</span>
-              <span class="badge rounded-pill" style="background-color: #ccc;">Upcoming</span>
-              <p class="card-text">About the project</p>
-            </div>
-            <a href="/pages/projects/digital-ag-crash-course-project.html" class="btn btn-primary">Read more</a>
-          </div>
-        </div>
-        
-        <!-- Third project card -->
-        <div class="three-column">
-          <div class="card">
-            <div class="card-body">
-              <img src="/Users/megan/Documents/DAC Github Pages/img/test_img.jpeg" class="card-img-top" alt="...">
-              <h5 class="card-title">Another project here</h5>
-              <span class="badge rounded-pill" style="background-color: #000000; margin-left: 10px;">2023</span>
-              <span class="badge rounded-pill" style="background-color: #ffb800;">In progress</span>
-              <p class="card-text">About the project</p>
-              </div>
-              <a href="/pages/projects/" class="btn btn-primary">Read more</a>
-          </div>
-        </div>
-        
-      </div>
-        
-
-    </div> <!-- Close projects block -->
-  </div> <!-- Close container -->
-
-  <div id="footer"> <!-- Start footer -->
-    <div class="footer-content">
-      <p>Insert contact information/social media links <BR> 
-      Copyright information
-      </p>
-    </div>
-  </div> <!-- Close footer -->
-
-</body>
-</html>
+</div>
