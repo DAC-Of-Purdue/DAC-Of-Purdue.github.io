@@ -1,6 +1,8 @@
+---
 layout: post
 title: "testing"
 date: 2023-03-16 9:56:00 -0000
 categories: CATEGORY-1 CATEGORY-2
+---
 
 test content
