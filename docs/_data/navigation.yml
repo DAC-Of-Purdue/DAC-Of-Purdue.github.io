@@ -1,0 +1,20 @@
+
+docs:
+
+- title: Homepage
+  url: index.html
+
+- title: About
+  url: about.html
+
+- title: Projects
+  url: projects.html
+  
+  
+ projectslist:
+ - title: Current Projects
+  children:
+    - title: Arduino Pods
+      url: arduino.html
+    - title: Digital Ag Crash Course
+      url: digitalagcrashcourse.html
