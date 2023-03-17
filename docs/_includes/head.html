@@ -11,6 +11,15 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans&family=IBM+Plex+Sans:wght@300;400;600&family=Noto+Sans+Mono:wght@400;600&display=swap" rel="stylesheet">
 
+<nav class="navbar fixed-top navbar-light bg-light">
+  <div class="container-fluid">
+     <ul>
+        {% for item in site.data.samplelist.links %}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+   {% endfor %}
+</ul>
+  </div>
+</nav>
 
    <nav id="navbar" class="collapse navbar-collapse">
     <ul class="nav navbar-nav">
