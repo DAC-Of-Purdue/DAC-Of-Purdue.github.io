@@ -75,9 +75,16 @@ title: "Digital Agricultural Club of Purdue"
     
     <ul>
         {% for post in site.posts %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
+            <div class="three-column">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                        {% if post.tags.size > 0 %}
+                          Tag{% if post.tags.size > 1 %}s{% endif %}: {{ post.tags | sort | join: ", " }}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
         {% endfor %}
     </ul>
 
