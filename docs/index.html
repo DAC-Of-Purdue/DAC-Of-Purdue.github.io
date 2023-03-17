@@ -2,8 +2,6 @@
 layout: default
 title: "Digital Agricultural Club of Purdue"
 ---
-
-<div id="container" style="margin: auto; width: 75%;"> <!-- Start container -->
     
     <div class="row"> <!-- Start welcome block -->
       <div class="two-column-55">
@@ -79,13 +77,13 @@ title: "Digital Agricultural Club of Purdue"
                 <div class="card">
                     <div class="card-body">
                         <img src="/img/test_img.jpeg" class="card-img-top" alt="...">
-                        <a href="{{ post.url }}">{{ post.title }}</a>
+                        <h5 class="caard-title"><a href="{{ post.url }}">{{ post.title }}</a><h5>
                         {% if post.tags.size > 0 %}
-                          <span class="badge rounded-pill" style="background-color: #000000;">{{ post.tags | sort | join: ", " }}</span>
+                          <span class="badge rounded-pill" style="background-color: #000000;">{{ post.tags }}</span>
                         {% endif %}
                         <p class="card-text">About the project</p>
                     </div>
-                    <a href="/pages/projects/" class="btn btn-primary">Read more</a>
+                    <a href="{{ post.url }}" class="btn btn-primary">Read more</a>
                 </div>
             </div>
         {% endfor %}     
@@ -94,4 +92,3 @@ title: "Digital Agricultural Club of Purdue"
         
 
     </div> <!-- Close projects block -->
-  </div> <!-- Close container -->
