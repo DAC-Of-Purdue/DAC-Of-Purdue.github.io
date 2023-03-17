@@ -2,7 +2,7 @@
 layout: default
 title:  "Arduino Pods"
 tags: 2022 Complete
-snippet: "Hello this is a snippet."
+snippet: "An experiment in growing plants in a controlled environment!"
 ---
 
-Description of project here.
+More about project here.
