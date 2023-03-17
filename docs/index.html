@@ -78,9 +78,9 @@ title: "Digital Agricultural Club of Purdue"
                     <div class="card-body">
                         <img src="/img/test_img.jpeg" class="card-img-top" alt="...">
                         <h5 class="card-title">{{ post.title }}</h5>
-                        {% if post.tags.size > 0 %}
-                          <span class="badge rounded-pill" style="background-color: #000000;">{{ post.tags }}</span>
-                        {% endif %}
+                        {% for item in post.tags %}
+                          <span class="badge rounded-pill" style="background-color: #000000;">{{ tag }}</span>
+                        {% endfor %}
                         <p class="card-text">{{ post.snippet }}</p>
                     </div>
                     <a href="{{ post.url }}" class="btn btn-primary">Read more</a>
