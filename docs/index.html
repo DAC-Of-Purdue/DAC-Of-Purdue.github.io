@@ -81,7 +81,7 @@ title: "Digital Agricultural Club of Purdue"
                         {% if post.tags.size > 0 %}
                           <span class="badge rounded-pill" style="background-color: #000000;">{{ post.tags }}</span>
                         {% endif %}
-                        <p class="card-text">About the project</p>
+                        <p class="card-text">{{ post.snippet }}</p>
                     </div>
                     <a href="{{ post.url }}" class="btn btn-primary">Read more</a>
                 </div>
