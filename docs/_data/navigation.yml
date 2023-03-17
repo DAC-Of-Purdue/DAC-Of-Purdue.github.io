@@ -1,4 +1,4 @@
-docs:
+links:
 - title: Homepage
   url: index.html
 
@@ -8,11 +8,8 @@ docs:
 - title: Projects
   url: projects.html
   
-subfolderitems:
-- page: Projects
-  url: /projects.html
-      subsubfolderitems:
-      - page: Arduino Pods
-        url: /arduino-pods.html
-      - page: Digital Ag Crash Course
-        url: /digital-ag-crash-course.html
+  sublinks:
+    - title: Arduino Pods
+      url: /arduino-pods.html
+    - title: Digital Ag Crash Course
+      url: /digital-ag-crash-course.html
