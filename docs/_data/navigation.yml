@@ -1,15 +1,11 @@
-links:
 - title: Home
-  url: index.html
-
+  url: /
+  
 - title: About
-  url: about.html
+  url: /about
 
 - title: Projects
-  url: projects.html
-  
+  url: /projects/
   sublinks:
-    - title: Arduino Pods
-      url: /arduino-pods.html
-    - title: Digital Ag Crash Course
-      url: /digital-ag-crash-course.html
+    - title: Arduino
+      url: /2023/03/17/arduino-pods.html
