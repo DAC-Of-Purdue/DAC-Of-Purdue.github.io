@@ -19,19 +19,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
          <ul class="navbar-nav">
-            {% for item in site.data.navigation.links %}
             <li class="nav-item">
-               <a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+               <a class="nav-link" href="/about">About</a>
             </li>
-            {% endfor %}
-            
-            {% for sublink in link.sublinks %}
             <li class="nav-item dropdown">
-             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-menu" href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
-            </ul>
+               <a class="nav-link dropdown-toggle" href="/projects" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
+               </a>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/arduino-pods">Arduino Pods</a></li>
+                  <li><a class="dropdown-item" href="/2023/03/17/asabe-hackathon.html">ASABE 2023 Hackathon</a></li>
+                  <li><a class="dropdown-item" href="#">Digital Ag Crash Course</a></li>
+               </ul>
             </li>
-            {% endfor %}  
+            </div>
       </div>
-   </div>
 </nav>
