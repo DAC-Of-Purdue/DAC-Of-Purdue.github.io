@@ -27,8 +27,8 @@
           
             {% assign sublinks = entry.sublinks %}
             {% if sublinks %}
-                <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-                        <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}{{ entry.url }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ entry.title }}</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 {% for sublink in sublinks %}
                                 <li><a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
