@@ -26,7 +26,7 @@
             {% endif %}
             {% assign sublinks = entry.sublinks %}
             {% if sublinks %}
-            <li class="nav-item" {{ current }}>
+            <li{{ current }}>
                 <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
                 <ul>
                     {% for sublink in sublinks %}
@@ -35,7 +35,7 @@
                 </ul>
             </li>
             {% else %}
-            <li class="nav-item" {{ current }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
+            <li class="navbar-text"><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
             {% endif %}
         {% endfor %}
         </ul>
