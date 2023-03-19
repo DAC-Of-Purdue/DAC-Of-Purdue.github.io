@@ -16,6 +16,7 @@
 
 <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
+          <ul class="navbar-nav">
         {% for entry in site.data.navigation %}
           
             {% if entry.url == current_page %}
@@ -42,5 +43,6 @@
             {% endif %}
           
         {% endfor %}
+          </ul>
     </div>
 </nav>
