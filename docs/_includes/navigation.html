@@ -28,18 +28,20 @@
             {% assign sublinks = entry.sublinks %}
             {% if sublinks %}
                 <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-                    {% for sublink in sublinks %}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Link
+                                Projects
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 <li><a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
                             </ul>
                         </li>
-                    {% endfor %}
             {% else %}
-            <span class="navbar-text"><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></span>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+                  </li>
             {% endif %}
           
         {% endfor %}
