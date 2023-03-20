@@ -42,6 +42,10 @@ a {
   --bs-nav-link-padding-x: 0.75rem;
 }
 
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+
 /* Project cards */
 
 .card .btn-primary {
