@@ -37,6 +37,11 @@ a {
   margin-bottom: 60px;
 }
 
+.navbar-nav {
+  flex-direction: row;
+  --bs-nav-link-padding-x: 0.75rem;
+}
+
 /* Project cards */
 
 .card .btn-primary {
