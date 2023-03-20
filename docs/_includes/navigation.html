@@ -1,4 +1,4 @@
-<!-- Belongs at: /_includes/navigation.html -->
+<!-- Code from https://gist.github.com/pdarragh/c7ca120604c1a1d8b8de -->
 
 <!-- This finds the current page so it can be highlighted. -->
 
@@ -15,36 +15,36 @@
 <!-- Then we build the nav bar. -->
 
 <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                  {% for entry in site.data.navigation %}
-                  {% if entry.url == current_page %}
-                  {% assign current = ' class="current"' %}
-                  {% else %}
-                  <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
-                  {% assign current = null %}
-                  {% endif %}
-         
-                  {% assign sublinks = entry.sublinks %}
-                  {% if sublinks %}
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}{{ entry.url }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ entry.title }}</a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                          {% for sublink in sublinks %}
-                          <li><a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
-                          {% endfor %}
-                      </ul>
-                  </li>
-                  {% else %}
-                  <li class="nav-item">
-                      <a class="nav-link" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-                  </li>
-                  {% endif %}
-                  {% endfor %}
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                {% for entry in site.data.navigation %}
+                    {% if entry.url == current_page %}
+                    {% assign current = ' class="current"' %}
+                    {% else %}
+                    <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
+                    {% assign current = null %}
+                    {% endif %}
+                {% assign sublinks = entry.sublinks %}
+                    {% if sublinks %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="{{ site.baseurl }}{{ entry.url }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ entry.title }}</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            {% for sublink in sublinks %}
+                            <li><a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
               </ul>
-          </div>
+        </div>
+    </div>
 </nav>
