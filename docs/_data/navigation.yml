@@ -5,11 +5,11 @@
   url: /about
 
 - title: Projects
-  url: /projects
+  url: /dac-projects
   sublinks:
-    - title: Arduino
+    - title: Arduino Pods
       url: /2023/03/17/arduino-pods.html
     - title: Digital Ag Crash Course
       url: /2023/03/17/crash-course.html
-    - title: ASABE Hackathon
+    - title: ASABE 2023 Hackathon
       url: /2023/03/17/asabe-hackathon.html
