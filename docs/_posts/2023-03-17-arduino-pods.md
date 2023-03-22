@@ -6,4 +6,6 @@ snippet: "An experiment in growing plants in a controlled environment!"
 ---
 
 
-![image-title-here](/img/arduino_plant_bed.jpg){:class="img-responsive"}
+![Arduino plant bed](/img/arduino_plant_bed.jpg)
+
+
