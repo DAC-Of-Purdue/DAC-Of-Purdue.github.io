@@ -1,12 +1,18 @@
 toc:
+  - title: Home
+    permalink: /
   - title: About
     permalink: /about
     subfolderitems:
       - title: Board
         permalink: /board
+  - title: Activities
+    permalink: /activities
   - title: Projects
-    permalink: /projects
+    permalink:
     subfolderitems:
+      - title: Robo Rabbit Run
+        permalink: /robo-rabbit-run
       - title: Scarecrow Bot
         permalink: /scarecrow-bot
   - title: Resources

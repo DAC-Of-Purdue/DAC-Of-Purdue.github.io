@@ -1,0 +1,22 @@
+---
+layout: page
+title: About the Officers
+permalink: /board/
+---
+
+
+<div class="gallery">
+    {% for member in site.data.members %}
+      <div class="card">
+        <img
+          src="{{ member.image | relative_url }}"
+          alt="{{ member.name }}'s image"
+          class="avatar"
+        />
+        <div class="title">{{ member.name }}</div>
+        <div class="subtitle">{{ member.position }}</div>
+        <p>Major: {{ member.major }}</p>
+        <p>{{ member.bio }}</p>
+      </div>
+    {% endfor %}
+</div>

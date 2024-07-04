@@ -1,0 +1,20 @@
+- name: Tam Bureetes
+  position: President
+  image:
+  bio:
+  major: Agricultural Engineering
+- name: Autumn Denny
+  position: Vice President
+  image:
+  bio:
+  major: Agricultural Engineering
+- name: Gabe
+  position: Treasurer
+  image:
+  bio:
+  major: Computer Science
+- name: Dalne Sinclair
+  position: Secretary
+  image:
+  bio:
+  major: Food Science

@@ -21,10 +21,14 @@
         <div class="trigger">
           {% for item in site.data.navigation.toc %}
           <!-- (Parent) page with subfolder items -->
-          {%- if item.subfolderitems -%}
+          {%- if item.subfolderitems -%} 
           <div class="parent-item">
             <li>
+              {% if item.permalink %}
               <a href="{{ item.permalink | relative_url }}">{{ item.title }}</a>
+              {%- else -%}
+              {{ item.title }}
+              {% endif %}
             </li>
             <!-- Subfolder items -->
             <div class="dropdown-list">

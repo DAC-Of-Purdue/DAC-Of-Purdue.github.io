@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="highlight-box">
-<h2>CURRENT HIGHLIGHT</h2>
+Highlights placeholder.
 EMBED VIDEO HERE.
 </div>
 
@@ -16,7 +16,7 @@ EMBED VIDEO HERE.
             <img class="top-overlay" src="/assets/drone.png">
         </div>
         <h2>Do you like...</h2>
-        Tech, ag, connecting with peers, and having fun?
+        tinkering with tech, agriculture, connecting with peers, and having fun?
     </div>
     <div class="three-col-box">
         <div class="icon-container">
@@ -24,8 +24,8 @@ EMBED VIDEO HERE.
             <img class="top-overlay" src="/assets/learning.png">
         </div>
         <h2>Do you want to learn...</h2>
-        new skills like programming, modeling, IoT?
-        how to apply it to agriculture?
+        skills like programming, modeling, IoT?
+        And how to apply it to agriculture?
     </div>
     <div class="three-col-box">
         <div class="icon-container">
@@ -34,7 +34,7 @@ EMBED VIDEO HERE.
         </div>
         <h2>Who should join?</h2>
         If you said yes to any, that's you!
-        Anyone of any major or discipline welcome, grads and undergrads!
+        Anyone of any major are welcome, grads and undergrads.
     </div>
 </div>
 
@@ -50,8 +50,8 @@ QR to join discord.
       class="avatar"
     />
     <div class="title">{{ project.title }}</div>
-    {{ project.bio }}
-    <a href="{{ project.permalink | relative_url }}">Read more</a>
+    <p>{{ project.bio }}</p>
+    <div class="card-button"><a href="{{ project.permalink | relative_url }}">Read more >></a></div>
   </div>
 {% endif %} {% endfor %}
 </div>

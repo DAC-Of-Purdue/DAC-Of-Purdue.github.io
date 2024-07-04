@@ -7,6 +7,8 @@
   .parent-item li {
     list-style-type: none;
     padding: 10px 15px;
+    color: #ffffff;
+    cursor: pointer;
   }
   
   .dropdown-list {
@@ -22,7 +24,7 @@
   }
   
   .dropdown-list li {
-    padding: 5px 20px;
+    padding: 0px 20px;
     list-style-type: none;
     border-bottom: 1px solid #eee;
   }
@@ -47,7 +49,7 @@
   .gallery {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
   }
   
@@ -57,10 +59,19 @@
     padding: $spacing-unit/2;
     background-color: #FFD686;
     margin: 10px;
+    text-align: justify;
+  }
+
+  .card p {
+    margin-bottom: 10px;
   }
 
   .card a {
     color: #FF4D00;
+  }
+
+  .card-button{
+    float: right;
   }
 
   .avatar {
@@ -72,18 +83,19 @@
   .title {
     font-size: 24px;
     font-weight: 400;
-    color: #FF4D00;
+    color: $dark-orange;
     text-align: center;
   }
   
   .subtitle {
     font-size: 16px;
+    color: $brand-color-secondary;
     text-align: center;
   }
 
   .three-col-box {
-    width: 25%;
-    margin: 10px 40px;
+    width: 30%;
+    margin: 10px 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -93,7 +105,22 @@
     text-align: center;
   }
 
+  .two-col-box-60 {
+    width: 60%;
+    padding-right: 20px;
+  }
 
+  .two-col-box-40 {
+    width: 40%;
+    background-color: #FFD686;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .two-col-box-40 h2 {
+    margin: 15px 0;
+  }
+  
   /* Icons */
   
   .icon-container {
@@ -111,4 +138,18 @@
 
 .bottom-overlay {
     position: absolute;
+}
+
+  /* Images */
+
+.large-picture img {
+  border-radius: 10px;
+  width: 65%;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+img {
+  border-radius: 10px;
 }

@@ -1,5 +1,10 @@
+- title: Robo Rabbit Run Game
+  permalink: /robo-rabbit-run
+  image: /assets/rabbit.avif
+  bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  status: open
 - title: Scarecrow Bot
   permalink: /scarecrow-bot
   image: /assets/scarecrow-bot.webp
-  bio: Robot chasing rabbit
+  bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   status: open
