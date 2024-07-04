@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<div class="highlight-box">
+<h2>CURRENT HIGHLIGHT</h2>
+EMBED VIDEO HERE.
+</div>
+
+<h1 style="text-align: center;">Digital Agriculture Club of Purdue</h1>
+
+<div class="gallery">
+    <div class="three-col-box">
+        <div class="icon-container">
+            <img class="bottom-overlay" src="/assets/blob-1.png">
+            <img class="top-overlay" src="/assets/drone.png">
+        </div>
+        <h2>Do you like...</h2>
+        Tech, ag, connecting with peers, and having fun?
+    </div>
+    <div class="three-col-box">
+        <div class="icon-container">
+            <img class="bottom-overlay" src="/assets/blob-2.png">
+            <img class="top-overlay" src="/assets/learning.png">
+        </div>
+        <h2>Do you want to learn...</h2>
+        new skills like programming, modeling, IoT?
+        how to apply it to agriculture?
+    </div>
+    <div class="three-col-box">
+        <div class="icon-container">
+            <img class="bottom-overlay" src="/assets/blob-3.png">
+            <img class="top-overlay" src="/assets/handshake.png">
+        </div>
+        <h2>Who should join?</h2>
+        If you said yes to any, that's you!
+        Anyone of any major or discipline welcome, grads and undergrads!
+    </div>
+</div>
+
+QR to join discord.
+
+<h1 style="text-align: center;">Current Projects</h1>
+<div class="gallery">
+{% for project in site.data.projects %} {% if project.status == "open" %}
+  <div class="card">
+    <img
+      src="{{ project.image | relative_url }}"
+      alt="{{ project.title }}'s image"
+      class="avatar"
+    />
+    <div class="title">{{ project.title }}</div>
+    {{ project.bio }}
+    <a href="{{ project.permalink | relative_url }}">Read more</a>
+  </div>
+{% endif %} {% endfor %}
+</div>

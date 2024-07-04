@@ -1,0 +1,13 @@
+toc:
+  - title: About
+    permalink: /about
+    subfolderitems:
+      - title: Board
+        permalink: /board
+  - title: Projects
+    permalink: /projects
+    subfolderitems:
+      - title: Scarecrow Bot
+        permalink: /scarecrow-bot
+  - title: Resources
+    permalink: /resources

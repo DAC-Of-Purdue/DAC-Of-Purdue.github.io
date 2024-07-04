@@ -1,0 +1,114 @@
+/* Dropdown styles */
+.parent-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .parent-item li {
+    list-style-type: none;
+    padding: 10px 15px;
+  }
+  
+  .dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translateX(-80px);
+    text-align: left;
+    border-radius: 10px; 
+  }
+  
+  .dropdown-list li {
+    padding: 5px 20px;
+    list-style-type: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .dropdown-list a {
+    color: $brand-color-primary;
+  }
+  
+  .parent-item:hover .dropdown-list {
+    display: block;
+  }
+  
+  /* Highlight box */
+  .highlight-box {
+    background-color: #ffffff;
+    height: 400px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  /* Cards */
+  .gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    width: 45%;
+    border-radius: 15px;
+    padding: $spacing-unit/2;
+    background-color: #FFD686;
+    margin: 10px;
+  }
+
+  .card a {
+    color: #FF4D00;
+  }
+
+  .avatar {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: $spacing-unit/2;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #FF4D00;
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .three-col-box {
+    width: 25%;
+    margin: 10px 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .three-col-box h2 {
+    text-align: center;
+  }
+
+
+  /* Icons */
+  
+  .icon-container {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.top-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 80px;
+}
+
+.bottom-overlay {
+    position: absolute;
+}

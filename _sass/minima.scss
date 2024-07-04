@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+// Brand
+$brand-color-primary: #FFA030;
+$brand-color-secondary: #2EC4B6;
+$dark-orange: #FF4D00;
+
+// Fonts
+$base-font-family: "Reddit Mono", monospace;
+$code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+$text-color: #000000;
+$background-color: #FFE3AE;
+
+// Links
+$link-base-color: #ffffff;
+$link-visited-color: #ffffff;
+$link-hover-color: #000000;
+
+// Borders
+$border-color-01: #000000;
+$border-color-02: #000000;
+$border-color-03: #000000;
+
+$code-background-color: #ffffff;
+
+// Table
+$table-text-color: #000000;
+$table-border-color: #000000;
+$table-zebra-color: #cccccc;
+$table-header-bg-color: #dddddd;
+$table-header-border: #000000;
+$table-text-align: left !default;
+
+// Spacing
+$spacing-unit:     30px !default;
+
+// Width of the content area
+$content-width:    70% !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+$on-medium:        $on-palm !default;
+$on-large:         $on-laptop !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+// Notice the following mixin uses max-width, in a deprecated, desktop-first
+// approach, whereas media queries used elsewhere now use min-width.
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: #{$ratio}rem;
+}
+
+// Import pre-styling-overrides hook and style-partials.
+@import
+  "minima/custom-variables", // Hook to override predefined variables.
+  "minima/base",             // Defines element resets.
+  "minima/layout",           // Defines structure and style based on CSS selectors.
+  "minima/custom-styles"     // Hook to override existing styles.
+;
