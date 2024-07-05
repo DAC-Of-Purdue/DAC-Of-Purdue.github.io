@@ -1,10 +1,10 @@
 - title: Robo Rabbit Run Game
   permalink: /robo-rabbit-run
   image: /assets/rabbit.avif
-  bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  bio: Players drive a remote-controlled rabbit to collect carrots while outrunning our autonomous Scarecrow Bot in a 16'x16' arena. Game designed for Boiler Gold Rush Entertainment Challenge 2024.
   status: open
 - title: Scarecrow Bot
   permalink: /scarecrow-bot
   image: /assets/scarecrow-bot.webp
-  bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  bio: Our automated & humane solution for pesky animals eating our horticultural crops! The goal is to deploy in real fields.
   status: open

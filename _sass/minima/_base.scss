@@ -43,7 +43,7 @@ html {
   p, blockquote, pre,
   ul, ol, dl, figure,
   %vertical-rhythm {
-    margin-bottom: $spacing-unit * .5;
+    margin-bottom: 10px;
   }
   
   hr {
@@ -104,14 +104,17 @@ html {
    */
   h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
-    color: #0039A8;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    color: $dark-blue;
+    padding-top: 20px;
   }
   
   
   h1 {
     color: $dark-orange;
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 28px;
   }
   
   /**

@@ -4,8 +4,10 @@
 
 // Brand
 $brand-color-primary: #FFA030;
+$background-accent: #FFD686;
 $brand-color-secondary: #2EC4B6;
 $dark-orange: #FF4D00;
+$dark-blue: #0048B5;
 
 // Fonts
 $base-font-family: "Reddit Mono", monospace;
@@ -18,8 +20,8 @@ $text-color: #000000;
 $background-color: #FFE3AE;
 
 // Links
-$link-base-color: #ffffff;
-$link-visited-color: #ffffff;
+$link-base-color: $dark-orange;
+$link-visited-color: $dark-orange;
 $link-hover-color: #000000;
 
 // Borders

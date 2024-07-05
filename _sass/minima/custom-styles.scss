@@ -4,6 +4,9 @@
     display: inline-block;
   }
   
+  .parent-item a {
+    color: #ffffff;
+  }
   .parent-item li {
     list-style-type: none;
     padding: 10px 15px;
@@ -23,6 +26,10 @@
     border-radius: 10px; 
   }
   
+  .dropdown-list li:last-child {
+    border: none;
+  }
+
   .dropdown-list li {
     padding: 0px 20px;
     list-style-type: none;
@@ -114,11 +121,11 @@
     width: 40%;
     background-color: #FFD686;
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
   }
-
-  .two-col-box-40 h2 {
-    margin: 15px 0;
+  
+  .two-col-box-40 h2{
+    padding-top: 0;
   }
   
   /* Icons */
@@ -152,4 +159,64 @@
 
 img {
   border-radius: 10px;
+}
+
+  /* Timeline */
+
+table.timeline {
+  margin: 40px 0 60px 0;
+  border: none;
+  width: 80%;
+}
+
+table.timeline tr, table.timeline td{
+  background-color: transparent;
+  padding: 10px;
+  margin: 0;
+  border: none;
+  vertical-align: top;
+}
+
+.timeline-date {
+  background-color: $background-accent;
+  color: $dark-orange;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+table.timeline h6 {
+  margin: 0;
+  color: $dark-orange;
+}
+
+table.timeline td:nth-child(even) {
+  padding-left: 40px;
+}
+
+.vl {
+  border-right: 3px solid $brand-color-primary;
+  height: 60px;
+  width: 70%;
+}
+
+/* Status buttons */
+
+.open-button {
+  background-color: $brand-color-primary;
+  color: white;
+  padding: 2px;
+  width: 60px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.complete-button {
+  background-color: #bce784;
+  color: #2c6e49;
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+  border-radius: 20px;
 }

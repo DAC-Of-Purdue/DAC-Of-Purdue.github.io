@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+{% for project in site.data.projects %}
+    {% if project.title == page.title %}
+        {% if project.status == 'open' %}
+        <div class="open-button">{{ project.status }}</div>
+        {% elsif project.status == 'complete' %}
+        <div class="complete-button">{{ project.status }}</div>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+{{ content }}
