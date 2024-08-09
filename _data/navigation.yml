@@ -15,5 +15,9 @@ toc:
         permalink: /robo-rabbit-run
       - title: Scarecrow Bot
         permalink: /scarecrow-bot
+      - title: Smart Irrigation
+        permalink: /smart-irrigation
+      - title: Food Waste Tracking
+        permalink: /food-waste-tracking
   - title: Resources
     permalink: /resources

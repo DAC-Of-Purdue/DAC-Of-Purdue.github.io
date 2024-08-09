@@ -1,14 +1,8 @@
-- title: 
-  permalink: 
-  image: 
-  summary: 
-  skills:
-  status:
 - title: Robo Rabbit Run Game
   permalink: /robo-rabbit-run
   divider: /assets/rabbit-divider.png
   image: /assets/rabbit.avif
-  summary: Players drive a remote-controlled rabbit to collect carrots while outrunning our autonomous Scarecrow Bot in a 16'x16' arena.
+  summary: At Purdue's Boiler Gold Rush, freshmen compete to collect the most carrots as a remote-controlled rabbit while evading our autonomous Scarecrow Bot.
   skills: 
     - Computer vision
     - Autonomous navigation
@@ -23,7 +17,7 @@
 - title: Scarecrow Bot
   permalink: /scarecrow-bot
   image: /assets/scarecrow-bot.webp
-  summary: Our automated & humane solution for pesky animals eating our horticultural crops!
+  summary: Our automated & humane on-farm solution for pesky animals eating horticultural crops!
   skills: 
     - Computer vision
     - Autonomous navigation
@@ -32,10 +26,9 @@
 - title: Smart Irrigation Decision Support System
   permalink: /smart-irrigation
   image: /assets/irrigation.jpg
-  summary: Automating irrigation systems with chatbot support for optimal water use on farms.
+  summary: Dashboard & chatbot support to automate irrigation systems and optimize water use for speciality crops.
   skills:
     - Large language model
-    - Dashboarding
     - User interface
     - Data analytics
     - Neural network
@@ -43,10 +36,9 @@
 - title: Food Waste Data Tracking
   permalink: /food-waste-tracking 
   image: /assets/foodwaste.jpg
-  summary: Buidling an IoT system to capture individual food waste donations & visualize the data.
+  summary: An IoT system to capture individual food waste donations & visualize data to help City Commissioners monitor the program.
   skills: 
     - IoT
     - Data architecture
-    - Dashboarding
     - Computer vision
   status: Coming soon
