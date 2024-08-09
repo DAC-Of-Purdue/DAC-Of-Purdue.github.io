@@ -3,11 +3,16 @@
 // Define defaults for each variable.
 
 // Brand
-$brand-color-primary: #FFA030;
-$background-accent: #FFD686;
-$brand-color-secondary: #2EC4B6;
-$dark-orange: #FF4D00;
+$brand-orange: #FFA030;
+$dark-orange: #FF5500; 
+
+$background-color: #FFE9C0;
+$background-color-light: #FFF2D8;
+$background-color-darker: #FFDB96;
+
+$brand-blue: #2EC4B6;
 $dark-blue: #0048B5;
+
 
 // Fonts
 $base-font-family: "Reddit Mono", monospace;
@@ -17,7 +22,7 @@ $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 $text-color: #000000;
-$background-color: #FFE3AE;
+
 
 // Links
 $link-base-color: $dark-orange;

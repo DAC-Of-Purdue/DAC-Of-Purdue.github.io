@@ -3,9 +3,6 @@ toc:
     permalink: /
   - title: About
     permalink: /about
-    subfolderitems:
-      - title: Board
-        permalink: /board
   - title: Activities
     permalink: /activities
   - title: Projects

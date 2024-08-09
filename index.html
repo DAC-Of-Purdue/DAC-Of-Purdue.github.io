@@ -5,7 +5,7 @@ layout: default
 <div class="section">
     <div class="space-30"></div>
     <img src="/assets/divider.png">
-    <div class="column-color-light">
+    <div class="column-color-light" style="padding-top: 10px;">
         <div class="title" style="text-align: center;">HIGHLIGHTS</div>
         <iframe src="https://www.youtube.com/embed/eqvaqL3EI2U?si=G-kh2FhDFuMnJZXZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 </div>
@@ -62,15 +62,16 @@ layout: default
                 <img style="margin-top: -8px; height: 25px; width: 25px;" src="/assets/brain.png">
                 {% assign random_skills = project.skills | sample: 4 %}
                     {% for skill in random_skills %}
-                        <div class="green-button-small">{{ skill }}</div>
+                        <div class="green-button">{{ skill }}</div>
                     {% endfor %}
 
                 {% if project.skills.size > 4 %}
                     {% assign extra_skills = project.skills.size | minus: 4 %}
-                    <a style="color: #000000; font-size: 13px;" href="{{ project.permalink | relative_url }}">+{{ extra_skills }} more skill(s)...</a>
+                    <a style="color: #000000; font-size: 14px;" href="{{ project.permalink | relative_url }}">+{{ extra_skills }} more skill(s)...</a>
                 {% endif %}
                 
                 <p style="margin-top: 20px;">{{ project.summary }}</p>
+
                 <div class="read-more"><a href="{{ project.permalink | relative_url }}">Read more >></a></div>
             </div>
             {% endif %}

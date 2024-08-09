@@ -122,7 +122,7 @@ html {
    * Blockquotes
    */
   blockquote {
-    color: $brand-color-primary;
+    color: $brand-orange;
     border-left: 4px solid $border-color-01;
     padding-left: $spacing-unit * .5;
     @include relative-font-size(1.125);
@@ -214,7 +214,7 @@ html {
    */
   
   .orange {
-    color: #f66a0a;
+    color: $dark-orange;
   }
   
   .grey {
