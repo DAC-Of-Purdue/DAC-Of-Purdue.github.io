@@ -13,8 +13,6 @@ html {
   
   }
   
-  
-  
   /**
    * Basic styling
    */
@@ -33,7 +31,6 @@ html {
     flex-direction: column;
     overflow-wrap: break-word;
   }
-  
   
   
   /**
@@ -59,7 +56,6 @@ html {
   }
   
   
-  
   /**
    * Images
    */
@@ -68,8 +64,7 @@ html {
     vertical-align: middle;
   }
   
-  
-  
+
   /**
    * Figures
    */
@@ -80,7 +75,6 @@ html {
   figcaption {
     font-size: $small-font-size;
   }
-  
   
   
   /**
@@ -97,25 +91,6 @@ html {
     }
   }
   
-  
-  
-  /**
-   * Headings
-   */
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
-    color: $dark-blue;
-    padding-top: 20px;
-  }
-  
-  
-  h1 {
-    color: $dark-orange;
-    font-size: 38px;
-  }
-  h2 {
-    font-size: 28px;
-  }
   
   /**
    * Links
@@ -264,7 +239,7 @@ html {
     text-align: $table-text-align;
     color: $table-text-color;
     border-collapse: collapse;
-    border: 1px solid $table-border-color;
+    margin: auto;
     tr {
       &:nth-child(even) {
         background-color: $table-zebra-color;
@@ -275,10 +250,6 @@ html {
     }
     th {
       background-color: $table-header-bg-color;
-      border: 1px solid $table-header-border;
-    }
-    td {
-      border: 1px solid $table-border-color;
     }
   
     @include media-query($on-laptop) {

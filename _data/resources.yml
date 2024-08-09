@@ -1,0 +1,15 @@
+- title: Reading Soil Moisture
+  date: 11/21/2023
+  image:
+  embed: https://tame0001.github.io/presentations/dac/soil-moisture.html
+  creator: Tam Bureetes
+- title: Connecting Sensors to the Internet
+  date: 12/4/2023
+  image:
+  embed: https://tame0001.github.io/presentations/dac/mqtt.html
+  creator: Tam Bureetes
+- title: Introduction to Electrical Motors
+  date: 2/14/2024
+  image:
+  embed: https://tame0001.github.io/presentations/dac/motor.html
+  creator: Tam Bureetes

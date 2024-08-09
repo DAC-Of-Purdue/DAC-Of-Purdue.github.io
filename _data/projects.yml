@@ -1,10 +1,52 @@
+- title: 
+  permalink: 
+  image: 
+  summary: 
+  skills:
+  status:
 - title: Robo Rabbit Run Game
   permalink: /robo-rabbit-run
+  divider: /assets/rabbit-divider.png
   image: /assets/rabbit.avif
-  bio: Players drive a remote-controlled rabbit to collect carrots while outrunning our autonomous Scarecrow Bot in a 16'x16' arena. Game designed for Boiler Gold Rush Entertainment Challenge 2024.
-  status: open
+  summary: Players drive a remote-controlled rabbit to collect carrots while outrunning our autonomous Scarecrow Bot in a 16'x16' arena.
+  skills: 
+    - Computer vision
+    - Autonomous navigation
+    - Electronics
+    - UX
+    - Game design
+    - Woodworking
+    - CAD design
+    - 3D printing
+    - Data architecture
+  status: In progress
 - title: Scarecrow Bot
   permalink: /scarecrow-bot
   image: /assets/scarecrow-bot.webp
-  bio: Our automated & humane solution for pesky animals eating our horticultural crops! The goal is to deploy in real fields.
-  status: open
+  summary: Our automated & humane solution for pesky animals eating our horticultural crops!
+  skills: 
+    - Computer vision
+    - Autonomous navigation
+    - Electronics
+  status: Coming soon
+- title: Smart Irrigation Decision Support System
+  permalink: /smart-irrigation
+  image: /assets/irrigation.jpg
+  summary: Automating irrigation systems with chatbot support for optimal water use on farms.
+  skills:
+    - Large language model
+    - Dashboarding
+    - User interface
+    - Data analytics
+    - Neural network
+  status: Coming soon
+- title: Food Waste Data Tracking
+  permalink: /food-waste-tracking 
+  image: /assets/foodwaste.jpg
+  summary: Buidling an IoT system to capture individual food waste donations & visualize the data.
+  skills: 
+    - IoT
+    - Data architecture
+    - Dashboarding
+    - Computer vision
+  status: Coming soon

@@ -3,4 +3,17 @@ layout: page
 title: Resources
 ---
 
-Link to Tam's presentations
+<div class="gallery">
+    {% for resource in site.data.resources %}
+        <div class="column-color" style="width: 310px;">
+            {% if resource.embed %}
+                <embed type="text/html" style="width: 100%; height: 200px; margin-bottom: 15px;" src="{{ resource.embed | relative_url }}">
+                {% else %}
+                <img src="{{ resource.image | relative_url }}" alt="{{ resource.title }}'s image" class="avatar"/>
+            {% endif %}
+            <h2>{{ resource.title }}</h2>
+            Created by {{ resource.creator }}<BR>
+            
+        </div>
+    {% endfor %}
+</div>
