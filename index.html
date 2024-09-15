@@ -3,78 +3,139 @@ layout: default
 ---
 
 <div class="section">
-    <div class="space-30"></div>
-    <img src="/assets/divider.png">
-    <div class="column-color-light" style="padding-top: 10px;">
-        <div class="title" style="text-align: center;">HIGHLIGHTS</div>
-        <iframe src="https://www.youtube.com/embed/MBqH-UfIwrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  <div class="space-30"></div>
+  <img src="/assets/divider.png" />
+  <div
+    class="column-color-light"
+    style="padding-top: 10px; display: flex; justify-content: center"
+  >
+    <div style="max-width: 800px">
+      <img src="/assets/callout-flyer-2024.png" alt="callout-flyer-2024" />
+    </div>
+    <!-- There is a problem  with YouTube highlight. When open in mobile phone, the width is too small -->
+    <!-- <div class="title" style="text-align: center">HIGHLIGHTS</div>
+    <iframe
+      src="https://www.youtube.com/embed/MBqH-UfIwrg"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe> -->
+  </div>
+</div>
+
+<div class="section">
+  <div class="gallery">
+    <div class="column-color-light" style="width: 60%">
+      <h2 style="text-align: center; color: #000000">
+        Can't attend the callout? <br />Want more information?
+      </h2>
+      <p style="margin-bottom: 0; text-align: center">
+        Scan the QR to join our Discord and stay updated
+        <!-- <img width="40px" src="/assets/point-right.png" /> -->
+        <br /><br />
+        All skill levels, majors, undergraduates & graduates are welcome!
+      </p>
+    </div>
+    <div class="column-color" style="min-width: 100px; max-width: 200px">
+      <p style="text-align: center">
+        <img src="/assets/discord-QR.png" />
+      </p>
+    </div>
+  </div>
 </div>
 
 <div class="space-30"></div>
 
 <div class="section">
-    <h1 style="text-align: center;">Digital Agriculture Club of Purdue</h1>
-    <div class="gallery">
-        <div class="column-transparent" style="width: 300px;">
-            <div style="height: 150px; width: 150px; background-image: linear-gradient(#FFD686, #FFA030); border-radius: 50%; margin: auto; margin-bottom: 20px;"></div>
-            <h2>Are you interested in...</h2>
-            tinkering with tech, agriculture, connecting with peers, and having fun?
-        </div>
-       
-        <div class="column-transparent" style="width: 300px;">
-            <div style="height: 150px; width: 150px; background-image: linear-gradient(#FFD686, #FFA030); border-radius: 50%; margin: auto; margin-bottom: 20px;"></div>
-            <h2>Do you want to learn...</h2>
-            skills like programming, modeling, IoT?
-            And how to apply it to agriculture?
-        </div>
-       
-        <div class="column-transparent" style="width: 300px;">
-            <div style="height: 150px; width: 150px; background-image: linear-gradient(#FFD686, #FFA030); border-radius: 50%; margin: auto; margin-bottom: 20px;"></div>
-            <h2>Itching to solve...</h2>
-            real world problems affecting the food and ag system?
-        </div>
+  <h1 style="text-align: center">Digital Agriculture Club of Purdue</h1>
+  <div class="gallery">
+    <div class="column-transparent" style="width: 300px">
+      <div
+        style="
+          height: 150px;
+          width: 150px;
+          background-image: linear-gradient(#ffd686, #ffa030);
+          border-radius: 50%;
+          margin: auto;
+          margin-bottom: 20px;
+        "
+      ></div>
+      <h2>Are you interested in...</h2>
+      tinkering with tech, agriculture, connecting with peers, and having fun?
     </div>
-</div>
 
-<div class="section">
-    <div class="gallery">
-        <div class="column-color-light" style="width: 60%;">
-            <h2 style="text-align: center; color: #000000">If this is you, join our club!</h2>
-            <p style="margin-bottom: 0">All skill levels, majors, undergraduates & graduates are welcome! Scan the QR to join our Discord and stay updated <img width="40px" src="/assets/point-right.png"></p>
-        </div>
-        <div class="column-color" style="width: 100px;">
-            <p style="text-align: center;"><img width="100px" src="/assets/discord-QR.png"></p>
-        </div>
+    <div class="column-transparent" style="width: 300px">
+      <div
+        style="
+          height: 150px;
+          width: 150px;
+          background-image: linear-gradient(#ffd686, #ffa030);
+          border-radius: 50%;
+          margin: auto;
+          margin-bottom: 20px;
+        "
+      ></div>
+      <h2>Do you want to learn...</h2>
+      skills like programming, modeling, IoT? And how to apply it to
+      agriculture?
     </div>
+
+    <div class="column-transparent" style="width: 300px">
+      <div
+        style="
+          height: 150px;
+          width: 150px;
+          background-image: linear-gradient(#ffd686, #ffa030);
+          border-radius: 50%;
+          margin: auto;
+          margin-bottom: 20px;
+        "
+      ></div>
+      <h2>Itching to solve...</h2>
+      real world problems affecting the food and ag system?
+    </div>
+  </div>
 </div>
 
 <div class="space-30"></div>
 
 <div class="section">
-    <h1 style="text-align: center;">Current Projects</h1>
-    
-    <div class="gallery">
-        {% for project in site.data.projects %} 
-            {% if project.status == "In progress" or project.status == "Coming soon" %}
-            <div class="column-color" style="width: 450px;">
-                <h2>{{ project.title }}</h2>
-                <img src="{{ project.image | relative_url }}" alt="{{ project.title }}'s image" class="avatar"/>
-                <img style="margin-top: -8px; height: 25px; width: 25px;" src="/assets/brain.png">
-                {% assign random_skills = project.skills | sample: 4 %}
-                    {% for skill in random_skills %}
-                        <div class="green-button">{{ skill }}</div>
-                    {% endfor %}
+  <h1 style="text-align: center">Current Projects</h1>
 
-                {% if project.skills.size > 4 %}
-                    {% assign extra_skills = project.skills.size | minus: 4 %}
-                    <a style="color: #000000; font-size: 14px;" href="{{ project.permalink | relative_url }}">+{{ extra_skills }} more skill(s)...</a>
-                {% endif %}
-                
-                <p style="margin-top: 20px;">{{ project.summary }}</p>
+  <div class="gallery">
+    {% for project in site.data.projects %} {% if project.status == "In
+    progress" or project.status == "Coming soon" %}
+    <div class="column-color" style="width: 450px">
+      <h2>{{ project.title }}</h2>
+      <img
+        src="{{ project.image | relative_url }}"
+        alt="{{ project.title }}'s image"
+        class="avatar"
+      />
+      <img
+        style="margin-top: -8px; height: 25px; width: 25px"
+        src="/assets/brain.png"
+      />
+      {% assign random_skills = project.skills | sample: 4 %} {% for skill in
+      random_skills %}
+      <div class="green-button">{{ skill }}</div>
+      {% endfor %} {% if project.skills.size > 4 %} {% assign extra_skills =
+      project.skills.size | minus: 4 %}
+      <a
+        style="color: #000000; font-size: 14px"
+        href="{{ project.permalink | relative_url }}"
+        >+{{ extra_skills }} more skill(s)...</a
+      >
+      {% endif %}
 
-                <div class="read-more"><a href="{{ project.permalink | relative_url }}">Read more >></a></div>
-            </div>
-            {% endif %}
-        {% endfor %}
+      <p style="margin-top: 20px">{{ project.summary }}</p>
+
+      <div class="read-more">
+        <a href="{{ project.permalink | relative_url }}">Read more >></a>
+      </div>
     </div>
+    {% endif %} {% endfor %}
+  </div>
 </div>

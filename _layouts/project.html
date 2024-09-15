@@ -4,42 +4,38 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-{% for project in site.data.projects %}
-    {% if project.title == page.title %}
-        {% if project.status == 'In progress' %}
-        <div class="green-button">{{ project.status }}</div>
-        {% elsif project.status == 'Closed' or project.status == 'On hold' or project.status == 'Coming soon' %}
-        <div class="grey-button">{{ project.status }}</div>
-        {% endif %}
+{% for project in site.data.projects %} {% if project.title == page.title %} {%
+if project.status == 'In progress' %}
+<div class="green-button">{{ project.status }}</div>
+{% elsif project.status == 'Completed' %}
+<div class="blue-button">{{ project.status }}</div>
+{% elsif project.status == 'Closed' or project.status == 'On hold' or
+project.status == 'Coming soon' %}
+<div class="grey-button">{{ project.status }}</div>
+{% endif %}
 
-        <img src="{{ page.header-image | relative_url }}">
-
-        <div class="section">
-            <div class="gallery">
-                <div class="column-color" style="width: 42%">
-                    <h2>What is it?</h2>
-                    {{ page.long-description | raw }}
-                </div>
-                <div class="column-image" style="width: 50%;">
-                <img src="{{ project.image | relative_url }}">
-                </div>
-            </div>
-        </div>
-        
-    {% endif %}
-{% endfor %}
-
-{{ content }}
+<img src="{{ page.header-image | relative_url }}" />
 
 <div class="section">
-    <h2>How did we build this?</h2>
-    <ul>
-    {% for project in site.data.projects %}
-        {% if project.title == page.title %}
-            {% for skill in project.skills %}
-                <li>{{ skill }}</li>
-            {% endfor %}
-        {% endif %}
-    {% endfor %}
-    </ul>
+  <div class="gallery">
+    <div class="column-color" style="max-width: 450px; min-width: 250px">
+      <h2>What is it?</h2>
+      {{ page.long-description | raw }}
+    </div>
+    <div class="column-image" style="max-width: 450px; min-width: 250px">
+      <img src="{{ project.image | relative_url }}" />
+    </div>
+  </div>
+</div>
+
+{% endif %} {% endfor %} {{ content }}
+
+<div class="section">
+  <h2>How did we build this?</h2>
+  <ul>
+    {% for project in site.data.projects %} {% if project.title == page.title %}
+    {% for skill in project.skills %}
+    <li>{{ skill }}</li>
+    {% endfor %} {% endif %} {% endfor %}
+  </ul>
 </div>

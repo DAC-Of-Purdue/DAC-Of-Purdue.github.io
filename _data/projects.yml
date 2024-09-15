@@ -1,9 +1,9 @@
 - title: Robo Rabbit Run Game
   permalink: /robo-rabbit-run
   divider: /assets/rabbit-divider.png
-  image: /assets/rabbit.avif
+  image: /assets/robo-rabbit.JPG
   summary: At Purdue's Boiler Gold Rush, freshmen play as a remote-controlled rabbit to collect the most carrots for their residence halls. BUT they have to evade our patrolling autonomous Scarecrow Bot.
-  skills: 
+  skills:
     - Computer vision
     - Autonomous navigation
     - Electronics
@@ -13,12 +13,12 @@
     - CAD design
     - 3D printing
     - Data architecture
-  status: In progress
+  status: Completed
 - title: Scarecrow Bot
   permalink: /scarecrow-bot
   image: /assets/scarecrow-bot.webp
   summary: Our automated & humane on-farm solution for pesky animals eating horticultural crops!
-  skills: 
+  skills:
     - Computer vision
     - Autonomous navigation
     - Electronics
@@ -26,7 +26,7 @@
 - title: Smart Irrigation Decision Support System
   permalink: /smart-irrigation
   image: /assets/irrigation.jpg
-  summary: A hackathon project to automate irrigation systems through a user-friendly dashbord and chatbot.
+  summary: A hackathon project to automate irrigation systems through a user-friendly dashboard and chatbot.
   skills:
     - Large language model
     - Web app development
@@ -34,10 +34,10 @@
     - Neural network
   status: Coming soon
 - title: Food Waste Data Tracking
-  permalink: /food-waste-tracking 
+  permalink: /food-waste-tracking
   image: /assets/foodwaste.jpg
   summary: A hackathon project to capture individual food waste donations with IoT & visualize data for City Commissioners to monitor the program.
-  skills: 
+  skills:
     - IoT
     - Data architecture
     - Computer vision
