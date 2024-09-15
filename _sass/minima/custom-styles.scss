@@ -195,7 +195,7 @@ table.timeline td:nth-child(2) {
 
 /* Status buttons */
 
-.green-button, .grey-button {
+.green-button, .grey-button , .blue-button {
   display: inline-block;
   border-radius: 20px;
   padding: 1px 8px 1px 8px;
@@ -211,6 +211,11 @@ table.timeline td:nth-child(2) {
 .grey-button {
   color:#4C4C4C;
   background-color:#D9D9D9;
+}
+
+.blue-button {
+  color: #ffffff;
+  background-color: #387D9B;
 }
 
 /* TV */
