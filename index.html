@@ -93,11 +93,10 @@ layout: default
 <div class="space-30"></div>
 
 <div class="section">
-  <h1 style="text-align: center">Current Projects</h1>
+  <h1 style="text-align: center">Our Projects</h1>
 
   <div class="gallery">
-    {% for project in site.data.projects %} {% if project.status == "In
-    progress" or project.status == "Coming soon" %}
+    {% for project in site.data.projects %}
     <div class="column-color" style="width: 450px">
       <h2>{{ project.title }}</h2>
       <img
@@ -127,6 +126,6 @@ layout: default
         <a href="{{ project.permalink | relative_url }}">Read more >></a>
       </div>
     </div>
-    {% endif %} {% endfor %}
+    {% endfor %}
   </div>
 </div>

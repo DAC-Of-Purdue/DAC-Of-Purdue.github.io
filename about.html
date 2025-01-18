@@ -4,26 +4,31 @@ title: About the Club
 permalink: /about/
 ---
 
-<p>We are a registered student-run club at Purdue University, West Lafayette.
-The club was founded in 2022.</p>
-<p>Curious what kind of <a href="/activities">activities</a> we host and participate in?</p>
+<p>
+  We are a registered student-run club at Purdue University, West Lafayette. The
+  club was founded in 2022.
+</p>
+<p>
+  Curious what kind of <a href="/activities">activities</a> we host and
+  participate in?
+</p>
 
 <div class="space-30"></div>
 <h2>Mission</h2>
 
 <h1>Board of Officers</h1>
 <div class="gallery">
-    {% for member in site.data.members %}
-      <div class="column-color" style="width: 200px">
-        <img
-          src="{{ member.image | relative_url }}"
-          alt="{{ member.name }}'s image"
-          class="avatar"
-        />
-        <h3>{{ member.name }}</h3>
-        <h4 style="color: #2DC4B6;">{{ member.position }}</h4>
-        <p>Major: {{ member.major }}</p>
-        <p>{{ member.bio }}</p>
-      </div>
-    {% endfor %}
+  {% for member in site.data.members %}
+  <div class="column-color" style="width: 200px">
+    <img
+      src="{{ member.image | relative_url }}"
+      alt="{{ member.name }}'s image"
+      class="avatar"
+    />
+    <h3>{{ member.name }}</h3>
+    <h4 style="color: #2dc4b6">{{ member.position }}</h4>
+    <p>Major: {{ member.major }}</p>
+    <p>{{ member.bio }}</p>
+  </div>
+  {% endfor %}
 </div>
