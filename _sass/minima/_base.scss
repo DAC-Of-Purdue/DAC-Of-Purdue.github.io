@@ -182,7 +182,7 @@ html {
    * Wrapper
    */
   .wrapper {
-    max-width: $content-width;
+    max-width: calc(100% - (#{$spacing-unit}));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit * .5;
