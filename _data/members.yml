@@ -3,14 +3,15 @@
   image: /assets/gabe-profile.jpg
   bio:
   major: Computer Science
+
 - name: Chris
   position: Treasurer
   image: /assets/profile-icon.jpg
   bio:
   major: Computer Engineering
-  - name: Tam Bureetes
+
+- name: Tam Bureetes
   position: Member
   image: /assets/tam-profile.jpeg
   bio:
   major: Agricultural Engineering
-
