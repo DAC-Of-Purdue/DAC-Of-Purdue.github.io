@@ -1,20 +1,15 @@
-- name: Tam Bureetes
+- name: Gabriel Halstead
   position: President
-  image: /assets/tam-profile.jpeg
-  bio:
-  major: Agricultural Engineering
-- name: Autumn Denny
-  position: Vice President
-  image: /assets/autumn-profile.jpeg
-  bio:
-  major: Agricultural Engineering
-- name: Gabe
-  position: Treasurer
   image: /assets/gabe-profile.jpg
   bio:
   major: Computer Science
-- name: Dalne Sinclair
-  position: Secretary
-  image: /assets/dalne-profile.jpeg
+- name: Chris
+  position: Treasurer
+  image: /assets/Chris-profile.png
   bio:
-  major: Food Science
+  major: Computer Engineering
+  - name: Tam Bureetes
+  position: Member
+  image: /assets/tam-profile.jpeg
+  bio:
+  major: Agricultural Engineering
