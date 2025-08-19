@@ -4,9 +4,9 @@
   bio:
   major: Computer Science
 
-- name: Chris
+- name: Chris Feng
   position: Treasurer
-  image: /assets/profile-icon.jpg
+  image: /assets/chris-feng-profile.JPG
   bio:
   major: Computer Engineering
 
@@ -15,3 +15,4 @@
   image: /assets/tam-profile.jpeg
   bio:
   major: Agricultural Engineering
+
