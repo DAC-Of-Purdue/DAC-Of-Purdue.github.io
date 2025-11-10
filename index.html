@@ -22,19 +22,46 @@ layout: default
 
 <div class="section">
   <div class="gallery">
-    <div class="column-color-light" style="flex: 1; align-self: center">
-      <h2 style="text-align: center; color: #000000">
-        Can't attend the meeting?
-      </h2>
-      <p style="margin-bottom: 0; text-align: center">
-        Scan the QR or <a href="https://discord.gg/4ExXCXHGUv">click here</a> to
-        join our Discord and stay updated <br /><br />
-        We also have Instragram <a href="https://www.instagram.com/purdue_digitalag/">@purdue_digitalag</a>. Follow us <br /><br />
-        All skill levels, majors, undergraduates & graduates are welcome!
-      </p>
+    <div class="column-color-light" style="flex: 1">
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          height: 100%;
+        "
+      >
+        <h2 style="text-align: center; color: #000000">
+          Can't attend the meeting?
+        </h2>
+        <p style="margin-bottom: 0; text-align: center">
+          Scan the QR or
+          <a href="https://discord.gg/4ExXCXHGUv">click here</a> to join our
+          Discord and stay updated <br /><br />
+          We also have Instagram
+          <a href="https://www.instagram.com/purdue_digitalag/"
+            >@purdue_digitalag</a
+          >. Follow us <br /><br />
+          All skill levels, majors, undergraduates & graduates are welcome!
+        </p>
+      </div>
     </div>
     <div class="column-color" style="min-width: 150px; max-width: 250px">
-      <img src="/assets/discord-QR.png" />
+      <div
+        style="
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <img
+          src="/assets/discord-QR.png"
+          alt="Discord QR"
+          style="max-width: 100%; height: auto"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -130,4 +157,3 @@ layout: default
     {% endfor %}
   </div>
 </div>
-
