@@ -1,17 +1,17 @@
-- name: Gabriel Halstead
+- name: Chris Feng
   position: President
-  image: /assets/gabe-profile.jpg
+  image: /assets/chris-feng-profile.JPG
+  bio:
+  major: Computer Engineer
+
+- name: Shun Ide
+  position: Treasurer
+  image: /assets/Shun-profile.JPG
   bio:
   major: Computer Science
 
-- name: Chris Feng
-  position: Treasurer
-  image: /assets/chris-feng-profile.JPG
-  bio:
-  major: Computer Engineering
-
 - name: Tam Bureetes
-  position: Member
+  position: Graduate Advisor
   image: /assets/tam-profile.jpeg
   bio:
   major: Agricultural Engineering
